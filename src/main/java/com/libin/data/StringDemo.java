@@ -22,7 +22,9 @@ public class StringDemo {
         list.add("小");
         list.add("伙");
         System.out.println(String.join(",", list));
-
+        // matches
+        String str = "demo";
+        System.out.println("this is my demo".matches("(.*)" + str));
 
     }
 }
