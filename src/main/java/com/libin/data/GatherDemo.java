@@ -1,6 +1,8 @@
 package com.libin.data;
 
+import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -16,6 +18,22 @@ public class GatherDemo {
         hashtable.put("", "");
         hashtable.put("null", "null");
         for (Map.Entry entry : hashtable.entrySet()) {
+            System.out.println(entry.getKey());
+            System.out.println(entry.getValue());
+        }
+        // HashMap
+        HashMap<String, String> hashMap = new HashMap<>();
+        hashMap.put("","");
+        hashMap.put(null,null);
+        for (Map.Entry entry : hashMap.entrySet()) {
+            System.out.println(entry.getKey());
+            System.out.println(entry.getValue());
+        }
+        // LinkedHashMap
+        LinkedHashMap<String, String> linkedHashMap = new LinkedHashMap<>();
+        linkedHashMap.put("","");
+        linkedHashMap.put(null,null);
+        for (Map.Entry entry : linkedHashMap.entrySet()) {
             System.out.println(entry.getKey());
             System.out.println(entry.getValue());
         }
